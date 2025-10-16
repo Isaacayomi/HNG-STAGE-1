@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <header>
+        <h2 data-testid="test-user-name">Okunlola Isaac Ayomide</h2>
+      </header>
+
+      <figure>
+        <img
+          src="https://i.ibb.co/TMD9gB02/IMG-20240107-154231.jpg"
+          alt="Isaac Ayomide's Avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <p data-testid="test-user-bio">
+        A passionate frontend developer exploring modern web technologies and
+        design systems.
+      </p>
+      <p data-testid="test-user-time" class="time">Time</p>
+
+      <nav>
+        <ul data-testid="test-user-social-links">
+          <li>
+            <a
+              href="https://github.com/Isaacayomi"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/isaac-ayomide-okunlola-3568b7275/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://x.com/_devPRIME"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              >Twitter</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="lists-wrapper">
+        <section aria-label="Hobbies section">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding</li>
+            <li>Watching anime</li>
+            <li>Football</li>
+          </ul>
+        </section>
+
+        <section aria-label="Dislikes section">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Slow internet</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </body>
+  <script src="script.js"></script>
+</html>
