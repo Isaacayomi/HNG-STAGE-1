@@ -85,6 +85,15 @@ nav ul li a:hover {
   color: #1d4ed8;
 }
 
+nav ul li a:focus {
+  outline: none;
+  border: none;
+  color: #1d4ed8;
+  border-radius: 6px;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
 section {
   background: #f9fafb;
   padding: 1rem;
