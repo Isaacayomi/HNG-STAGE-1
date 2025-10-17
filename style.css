@@ -16,7 +16,9 @@ body {
 }
 
 article[data-testid="test-profile-card"] {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   padding: 2rem;
@@ -48,10 +50,6 @@ figure img {
   object-fit: cover;
   border: 3px solid #3b82f6;
   transition: transform 0.3s ease;
-}
-
-figure img:hover {
-  transform: scale(1.05);
 }
 
 [data-testid="test-user-bio"] {
@@ -100,12 +98,15 @@ section h3 {
   color: #111827;
 }
 
-section ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-  color: #374151;
-  line-height: 1.5;
-  word-break: break-word;
+section ul li {
+  position: relative;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #3b82f6;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5rem;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  list-style-type: none;
 }
 
 @media (min-width: 768px) {

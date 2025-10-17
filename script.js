@@ -1,4 +1,4 @@
 let time = document.querySelector('[data-testid="test-user-time"]');
 setInterval(() => {
-  time.textContent = "Time: " + Date.now();
+  time.textContent = "Time (ms): " + Date.now();
 }, 1000);
