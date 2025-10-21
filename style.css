@@ -65,12 +65,25 @@ figure img {
   color: #6b7280;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.internal__links {
+  justify-content: center;
 }
 
 nav ul li a {
