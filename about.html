@@ -4,47 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
+    <link rel="stylesheet" href="./about.css" />
   </head>
   <body>
+    <nav>
+      <ul class="internal__links">
+        <li>
+          <a
+            href="./index.html"
+            rel="noopener noreferrer"
+            data-testid="test-user-home"
+            >Home</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="./contact.html"
+            rel="noopener noreferrer"
+            data-testid="test-user-contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
     <main data-testid="test-about-page" id="about">
-      <section data-testid="test-about-bio">
-        <h2>About</h2>
+      <section class="about__section" data-testid="test-about-bio">
+        <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          repellendus, debitis quibusdam cumque praesentium aperiam minus atque
-          magni dolore esse adipisci placeat quas molestiae ut nostrum soluta
-          obcaecati ad reprehenderit!
+          I'm a frontend developer passionate about crafting delightful,
+          responsive user interfaces. I specialize in turning ideas into
+          interactive and visually appealing web applications.
         </p>
       </section>
-      <section data-testid="test-about-goals">
-        <h3>Goals</h3>
+
+      <section class="about__section" data-testid="test-about-goals">
+        <h2>My Goals in This Program</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-          quisquam reiciendis provident. Quas nam ea consectetur similique rerum
-          aliquid maxime id eos soluta eius totam, quis molestiae aperiam. Vero,
-          enim?
+          My main goal is to deepen my frontend development skills and become
+          more confident in building scalable, accessible, and production-ready
+          web applications. I also want to collaborate more with other
+          developers, improve my problem-solving skills, and learn to think
+          beyond just writing code, to building solutions that make impact.
         </p>
       </section>
-      <section data-testid="test-about-confidence">
-        <h3>Confidence</h3>
+
+      <section class="about__section" data-testid="test-about-confidence">
+        <h2>Areas of Low Confidence</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-          rerum dolores, atque voluptate magni, perferendis, ad minima
-          perspiciatis ratione eveniet illo eaque placeat asperiores laudantium
-          veniam iure nihil iste nemo.
+          I’m strengthening my grasp of design systems and responsive layout
+          techniques, while also improving how I communicate my approach in
+          collaborative environments.
         </p>
       </section>
-      <section data-testid="test-about-future-note">
-        <h3>Future Note</h3>
+
+      <section class="about__section" data-testid="test-about-future-note">
+        <h2>Note to My Future Self</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          adipisci pariatur voluptate rem! Nobis commodi nam nisi quidem quis,
-          officiis minus voluptatum sunt eligendi earum architecto, cupiditate
-          aliquid quod aspernatur?
+          You’ve come so far, even when it didn’t feel like progress. Every
+          challenge taught you patience. Every project showed you what’s
+          possible. Keep trusting the process, even when it’s quiet. Growth is
+          happening, not in leaps, but in the quiet moments you keep showing up.
         </p>
       </section>
-      <section data-testid="test-about-extra">
-        <h3>Extra</h3>
+
+      <section class="about__section" data-testid="test-about-extra">
+        <h2>Extra Thoughts</h2>
+        <p>
+          I’m genuinely excited about the journey ahead. Beyond coding, I hope
+          to keep building meaningful connections in tech communities, learn
+          from people smarter than me, and eventually give back by helping
+          beginners just like I once was.
+        </p>
       </section>
     </main>
   </body>

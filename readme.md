@@ -1,13 +1,14 @@
 # Dynamic Profile Card Component
 
-A modern and responsive profile card, built with **HTML5**, **CSS3**, and **Vanilla JavaScript**. This project dynamically displays user information, including a real-time timestamp, and integrates essential social media links, showcasing a clean, accessible, and testable web component design.
+An extended version of the Stage 0 project, built with **HTML5**, **CSS3**, and **Vanilla JavaScript**.
+This stage transforms the single profile card into a multi-page application, introducing an About Me page, a Contact Us form with validation, and refined responsive and accessible UI features.
 
 ---
 
 ## Live Demo
 
-🔗 **Live URL:** [https://isaacayomi.github.io/HNG-STAGE-0/](https://isaacayomi.github.io/HNG-STAGE-0/)  
-🔗 **GitHub Repo:** [https://github.com/Isaacayomi/HNG-STAGE-0](https://github.com/Isaacayomi/HNG-STAGE-0)
+🔗 **Live URL:** [https://isaacayomi.github.io/HNG-STAGE-1/](https://isaacayomi.github.io/HNG-STAGE-1/)  
+🔗 **GitHub Repo:** [https://github.com/Isaacayomi/HNG-STAGE-1](https://github.com/Isaacayomi/HNG-STAGE-1)
 
 ---
 
@@ -20,7 +21,7 @@ Follow these simple steps to get the project running on your local machine.
     Start by cloning the project repository to your local system:
 
     ```bash
-    git clone https://github.com/Isaacayomi/HNG-STAGE-0.git
+    git clone https://github.com/Isaacayomi/HNG-STAGE-1.git
     ```
 
 2.  ### Navigate to the Project Directory
@@ -28,7 +29,7 @@ Follow these simple steps to get the project running on your local machine.
     Move into the newly cloned project folder:
 
     ```bash
-    cd HNG-STAGE-0
+    cd HNG-STAGE-1
     ```
 
 3.  ### Open in Browser
@@ -55,3 +56,4 @@ Follow these simple steps to get the project running on your local machine.
 - **Modern & Responsive Design**: Crafted with clean CSS for an aesthetically pleasing and adaptive user experience that gracefully handles different screen resolutions.
 - **Enhanced Testability**: Incorporates `data-testid` attributes on all relevant elements, facilitating seamless integration with automated testing frameworks.
 - **Accessibility-Focused Markup**: Built with semantic HTML5 tags and proper `alt` attributes to ensure compatibility with screen readers and enhance overall web accessibility.
+- **Multi page Navigation**
