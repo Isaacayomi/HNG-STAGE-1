@@ -3,7 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <ul class="internal__links">
+        <li>
+          <a
+            href="./index.html"
+            rel="noopener noreferrer"
+            data-testid="test-user-home"
+            >Home</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="./contact.html"
+            rel="noopener noreferrer"
+            data-testid="test-user-contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <form name="myForm">
+      <div class="input__group">
+        <div class="form__field">
+          <label for="fullName">Full Name </label>
+          <input
+            type="name"
+            id="fullName"
+            name="fullName"
+            data-testid="test-contact-name"
+            aria-describedby="fullNameError"
+          />
+          <p
+            id="fullNameError"
+            class="error__msg fullname__error"
+            data-testid="test-contact-error-fullname"
+          >
+            This field is required
+          </p>
+        </div>
+
+        <div class="form__field">
+          <label for="email">Email Address </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            data-testid="test-contact-email"
+            aria-describedby="emailError"
+          />
+          <p
+            id="emailError"
+            class="error__msg email__error"
+            data-testid="test-contact-error-email"
+          >
+            Please enter a valid email address
+          </p>
+        </div>
+
+        <div class="form__field">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            data-testid="test-contact-subject"
+            aria-describedby="subjectError"
+          />
+          <p
+            id="subjectError"
+            class="error__msg subject__error"
+            data-testid="test-contact-error-subject"
+          >
+            Please enter a valid subject
+          </p>
+        </div>
+      </div>
+
+      <div class="form__field">
+        <label for="message">Message </label>
+        <textarea
+          name="messageBox"
+          class="message__input"
+          cols="30"
+          rows="10"
+          data-testid="test-contact-message"
+          aria-describedby="messageError"
+        ></textarea>
+        <p
+          id="messageError"
+          class="error__msg message__error"
+          data-testid="test-contact-error-message"
+        >
+          This field is required
+        </p>
+      </div>
+
+      <button type="submit" class="submitBtn" data-testid="test-contact-submit">
+        Submit
+      </button>
+    </form>
+
+    <!-- Success message -->
+    <aside>
+      <div class="confirmation__field">
+        <p class="message__sent">Message Sent!</p>
+      </div>
+      <p data-testid="test-contact-success">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </aside>
+  </body>
 </html>

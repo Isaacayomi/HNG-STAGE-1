@@ -118,6 +118,13 @@ section ul li {
   list-style-type: none;
 }
 
+.internal__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   article[data-testid="test-profile-card"] {
     grid-template-columns: 220px 1fr;
